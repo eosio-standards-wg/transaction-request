@@ -31,12 +31,12 @@ A QR code or NFC tag will open an HTTPS URL. This URL can also be
 passed to the client directly, like in email message.
 
 The wallet software should only accept HTTPS URLs with valid SSL
-certifictes.
+certificates.
 
-The wallet should issue an HTTPS GETT request to the URL, and it must
+The wallet should issue an HTTPS GET request to the URL, and it must
 not pass any user identification to the remote server.
 
-The response should have a special MIME type (TODO: proopse one) that
+The response should have a special MIME type (TODO: propose one) that
 is distinguished as transaction request.
 
 The content should be in JSON format with fields as follows:
@@ -52,14 +52,14 @@ The content should be in JSON format with fields as follows:
 * `auth-user-substitute`: a string that the wallet needs to substitute
   with authorizing user account (Suggestion: `%%AUTHUSER%%`)
 
-* `actions`: an array of JSON objects that represent a transaction for
+* `actions`: an array of JSON objects which represent a transaction for
   executing. The format is identical to that of `transact` function
   arguments in `eosjs 20.x`. The sender account is substituted with
   the string specified in `auth-user-substitute`.
 
 * `description-short`: a one-line short description in plain text.
 
-* `description-long`: a HTML string with a limited set of allowed HTML
+* `description-long`: an HTML string with a limited set of allowed HTML
   tags (TODO: define allowed tags).
 
 * `feedback-url` (optional): an HTTPS URL under the same domain name
