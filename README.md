@@ -8,6 +8,8 @@ https://github.com/eosio-standards-wg
 
 Status: early draft
 
+EDIT: this proposal is superceeded by EEP-7, so all implementation effort should be concentrated on it: https://github.com/eosio-standards-wg/transaction-request
+
 
 Introduction
 ------------
@@ -21,7 +23,7 @@ wallets so that a payment or other transaction can be requested via QR
 code or an NFC tag regarddless of what kind of wallet software is
 running on the user device.
 
-Telegram chat for discussions: https://t.me/transaction_req
+
 
 
 Requirements
