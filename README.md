@@ -8,7 +8,7 @@ https://github.com/eosio-standards-wg
 
 Status: early draft
 
-EDIT: this proposal is superceeded by EEP-7, so all implementation effort should be concentrated on it: https://github.com/eosio-standards-wg/transaction-request
+EDIT: this proposal is superceeded by EEP-7, so all implementation effort should be concentrated on it: https://github.com/greymass/eosio-signing-transport
 
 
 Introduction
